@@ -1,0 +1,23 @@
+{
+  "order": "Orden",
+  "article": "Artículo",
+  "updateArticle": "Actualizar artículo",
+  "createArticle": "Crear artículo",
+  "create": "Crear",
+  "listArticles": "Lista de artículos",
+  "reference": "Referencia",
+  "name": "Nombre",
+  "price": "Precio",
+  "tax": "Impuesto",
+  "actions": "Acciones",
+  "updateOrder": "Actualizar orden",
+  "createOrder": "Crear orden",
+  "listOrders": "Lista de órdenes",
+  "summary": "Resumen del pedido",
+  "quantity": "Cantidad",
+  "total": "Total",
+  "notHasArticles": "No hay artículos",
+  "articlesQuantity": "Cantidad de artículos",
+  "spanish": "Español",
+  "english": "Inglés"
+}

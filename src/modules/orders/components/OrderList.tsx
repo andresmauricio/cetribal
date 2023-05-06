@@ -1,9 +1,7 @@
-import { Edit } from "@mui/icons-material";
 import { useOrderList } from "../hooks/useOrderList";
 import {
   Box,
   Button,
-  IconButton,
   Paper,
   Stack,
   Table,
@@ -15,10 +13,12 @@ import {
   Typography,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export function OrderList() {
   const naviagte = useNavigate();
   const { orders } = useOrderList();
+  const { t } = useTranslation();
 
   return (
     <Box p={10}>
@@ -28,7 +28,7 @@ export function OrderList() {
         justifyContent="space-between"
       >
         <Typography variant="h3" my={6}>
-          Listado de Ordenes
+          {t("listOrders")}
         </Typography>
         <Box>
           <Button onClick={() => naviagte("new")}>Crear</Button>
@@ -38,9 +38,9 @@ export function OrderList() {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Referencia</TableCell>
-              <TableCell>Cantidad de productos</TableCell>
-              <TableCell>Total</TableCell>
+              <TableCell>{t("reference")}</TableCell>
+              <TableCell>{t("articlesQuantity")}</TableCell>
+              <TableCell>{t("total")}</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

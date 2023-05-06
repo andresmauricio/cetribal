@@ -1,0 +1,23 @@
+{
+  "order": "Order",
+  "article": "Article",
+  "updateArticle": "Update article",
+  "createArticle": "Create article",
+  "create": "Create",
+  "listArticles": "List articles",
+  "reference": "Reference",
+  "name": "Name",
+  "price": "Price",
+  "tax": "Tax",
+  "actions": "Actions",
+  "updateOrder": "Actualizar orden",
+  "createOrder": "Crear orden",
+  "listOrders": "List orders",
+  "summary": "Summary of the order",
+  "quantity": "Quantity",
+  "total": "Total",
+  "notHasArticles": "There are no articles in the order",
+  "articlesQuantity": "Quantity of articles",
+  "spanish": "Spanish",
+  "english": "English"
+}

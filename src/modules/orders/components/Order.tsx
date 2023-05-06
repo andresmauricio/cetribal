@@ -15,20 +15,23 @@ import { useParams } from "react-router-dom";
 import { useOrder } from "../hooks/useOrder";
 import { useArticleList } from "../../articles/hooks/useArticleList";
 import { Add, Image } from "@mui/icons-material";
+import { useTranslation } from "react-i18next";
 
 export function Order() {
   const params = useParams();
   const { addArticleToOrder, hasProduct, order, createOrder } = useOrder();
   const { articles } = useArticleList();
+  const { t } = useTranslation();
+
   return (
     <Box sx={{ p: 10 }}>
       <Typography variant="h3" mb={6}>
-        {params.id ? "Actualizar Orden" : "Crear Orden"}
+        {params.id ? t("updateOrder") : t("createOrder")}
       </Typography>
       <Stack flexDirection="row" gap={4} justifyContent="space-between">
         <Box sx={{ width: "100%", textAlign: "center" }} flex={2}>
           <Typography variant="h4" mb={4}>
-            Listado de productos
+            {t("listArticles")}
           </Typography>
           <List
             sx={{
@@ -63,30 +66,30 @@ export function Order() {
         </Box>
         <Box flex={1}>
           <Typography variant="h4" mb={4}>
-            Resumen del pedido
+            {t("summary")}
           </Typography>
           {order ? (
             <Card>
               <CardContent>
                 <Stack flexDirection="column" gap={4}>
                   <Typography variant="h5">
-                    Cantidad: {order?.articles.length}
+                    {t("quantity")}: {order?.articles.length}
                   </Typography>
                   <Typography variant="h5">
-                    Impuestos: ${Number(order?.taxes).toFixed(2)}
+                    {t("tax")}: ${Number(order?.taxes).toFixed(2)}
                   </Typography>
                   <Typography variant="h5">
-                    Total: ${Number(order?.total).toFixed(2)}
+                    {t("total")}: ${Number(order?.total).toFixed(2)}
                   </Typography>
                   <Button type="submit" onClick={createOrder}>
-                    Crear
+                    {t("create")}
                   </Button>
                 </Stack>
               </CardContent>
             </Card>
           ) : (
             <Typography variant="h5" fontWeight={700}>
-              No hay productos en el pedido
+              {t("notHasArticles")}
             </Typography>
           )}
         </Box>

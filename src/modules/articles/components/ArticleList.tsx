@@ -15,9 +15,11 @@ import {
 import { useArticleList } from "../hooks/useArticleList";
 import { Edit } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export function ArticleList() {
   const { articles } = useArticleList();
+  const { t } = useTranslation();
   const naviagte = useNavigate();
 
   return (
@@ -28,21 +30,21 @@ export function ArticleList() {
         justifyContent="space-between"
       >
         <Typography variant="h3" my={6}>
-          Listado de Articulos
+          {t("listArticles")}
         </Typography>
         <Box>
-          <Button onClick={() => naviagte("new")}>Crear</Button>
+          <Button onClick={() => naviagte("new")}>{t("create")}</Button>
         </Box>
       </Stack>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Referencia</TableCell>
-              <TableCell>Nombre</TableCell>
-              <TableCell>Precio</TableCell>
-              <TableCell>Impuesto</TableCell>
-              <TableCell>Acciones</TableCell>
+              <TableCell>{t("reference")}</TableCell>
+              <TableCell>{t("name")}</TableCell>
+              <TableCell>{t("price")}</TableCell>
+              <TableCell>{t("text")}</TableCell>
+              <TableCell>{t("actions")}</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
