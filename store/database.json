@@ -1,0 +1,183 @@
+{
+  "articles": [
+    {
+      "id": "1dr45-6y7u8-9i0o9",
+      "name": "T-shirt",
+      "price": 29.99,
+      "tax": 0.2
+    },
+    {
+      "id": "2dr45-6y7u8-9i0o9",
+      "name": "Jacket",
+      "price": 99.99,
+      "tax": 0.2
+    },
+    {
+      "id": "3dr45-6y7u8-9i0o9",
+      "name": "Shoes",
+      "price": 59.99,
+      "tax": 0.2
+    },
+    {
+      "id": "4dr45-6y7u8-9i0o9",
+      "name": "Socks",
+      "price": 9.99,
+      "tax": 0.2
+    },
+    {
+      "id": "5dr45-6y7u8-9i0o9",
+      "name": "Hat",
+      "price": 19.99,
+      "tax": 0.2
+    },
+    {
+      "id": "6dr45-6y7u8-9i0o9",
+      "name": "Gloves",
+      "price": 14.99,
+      "tax": 0.2
+    },
+    {
+      "id": "7dr45-6y7u8-9i0o9",
+      "name": "Scarf",
+      "price": 24.99,
+      "tax": 0.2
+    },
+    {
+      "id": "8dr45-6y7u8-9i0o9",
+      "name": "Belt",
+      "price": 9.99,
+      "tax": 0.2
+    },
+    {
+      "id": "9dr45-6y7u8-9i0o9",
+      "name": "Trousers",
+      "price": 49.99,
+      "tax": 0.2
+    },
+    {
+      "id": "10r45-6y7u8-9i0o9",
+      "name": "Jeansss",
+      "price": 59.99,
+      "tax": 0.2
+    }
+  ],
+  "orders": [
+    {
+      "id": "c877c00d0565a",
+      "articles": [
+        {
+          "id": "1dr45-6y7u8-9i0o9",
+          "name": "T-shirt",
+          "price": 29.99,
+          "tax": 0.2
+        },
+        {
+          "id": "2dr45-6y7u8-9i0o9",
+          "name": "Jacket",
+          "price": 99.99,
+          "tax": 0.2
+        },
+        {
+          "id": "5dr45-6y7u8-9i0o9",
+          "name": "Hat",
+          "price": 19.99,
+          "tax": 0.2
+        },
+        {
+          "id": "4dr45-6y7u8-9i0o9",
+          "name": "Socks",
+          "price": 9.99,
+          "tax": 0.2
+        }
+      ],
+      "total": 159.96,
+      "taxes": 0.8
+    },
+    {
+      "id": "1e3894d15daf3",
+      "articles": [
+        {
+          "id": "1dr45-6y7u8-9i0o9",
+          "name": "T-shirt",
+          "price": 29.99,
+          "tax": 0.2
+        },
+        {
+          "id": "4dr45-6y7u8-9i0o9",
+          "name": "Socks",
+          "price": 9.99,
+          "tax": 0.2
+        },
+        {
+          "id": "5dr45-6y7u8-9i0o9",
+          "name": "Hat",
+          "price": 19.99,
+          "tax": 0.2
+        },
+        {
+          "id": "7dr45-6y7u8-9i0o9",
+          "name": "Scarf",
+          "price": 24.99,
+          "tax": 0.2
+        },
+        {
+          "id": "8dr45-6y7u8-9i0o9",
+          "name": "Belt",
+          "price": 9.99,
+          "tax": 0.2
+        },
+        {
+          "id": "2dr45-6y7u8-9i0o9",
+          "name": "Jacket",
+          "price": 99.99,
+          "tax": 0.2
+        },
+        {
+          "id": "3dr45-6y7u8-9i0o9",
+          "name": "Shoes",
+          "price": 59.99,
+          "tax": 0.2
+        },
+        {
+          "id": "9dr45-6y7u8-9i0o9",
+          "name": "Trousers",
+          "price": 49.99,
+          "tax": 0.2
+        },
+        {
+          "id": "10r45-6y7u8-9i0o9",
+          "name": "Jeansss",
+          "price": 59.99,
+          "tax": 0.2
+        },
+        {
+          "id": "6dr45-6y7u8-9i0o9",
+          "name": "Gloves",
+          "price": 14.99,
+          "tax": 0.2
+        }
+      ],
+      "total": 379.9,
+      "taxes": 1.9
+    },
+    {
+      "id": "53b646eccd267",
+      "articles": [
+        {
+          "id": "2dr45-6y7u8-9i0o9",
+          "name": "Jacket",
+          "price": 99.99,
+          "tax": 0.2
+        },
+        {
+          "id": "1dr45-6y7u8-9i0o9",
+          "name": "T-shirt",
+          "price": 29.99,
+          "tax": 0.2
+        }
+      ],
+      "total": 129.98,
+      "taxes": 0.4
+    }
+  ]
+}
